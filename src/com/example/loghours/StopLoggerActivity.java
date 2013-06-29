@@ -37,37 +37,11 @@ public class StopLoggerActivity extends Activity {
 		String row_id = get_intent.getStringExtra(MainActivity.ROW_ID);
 		
     	// update database
+		DbFunctions entry = new DbFunctions(this);
+    	entry.open();
+    	entry.insertStopTime(dateTimeStamp, row_id);
+    	entry.close();
     	
-    	// initiate helper
-    	LogsDbHelper mDbHelper = new LogsDbHelper(getBaseContext());
-    	
-    	// Gets the data repository in read mode
-    	SQLiteDatabase db = mDbHelper.getReadableDatabase();
-    	
-    	// New value for one column
-    	ContentValues values = new ContentValues();
-    	values.put(Logs.COLUMN_NAME_STOP_TIME, dateTimeStamp);
-    	
-    	// Which row to update, based on the ID
-    	String selection = Logs._ID + " = ?";
-    	String[] selectionArgs = { String.valueOf(row_id) };
-    	try
-    	{
-	    	Integer count = db.update(
-	    		Logs.TABLE_NAME,
-	    	    values,
-	    	    selection,
-	    	    selectionArgs);
-	    	if (count!=1){
-	    		throw new NoSuchFieldException();
-	    	}
-    	}
-    	catch(NoSuchFieldException e)
-        {
-            e.printStackTrace();
-        } 
-    	
-    	db.close();
     	// start start activity
     	Intent intent = new Intent(this, MainActivity.class);
     	startActivity(intent);

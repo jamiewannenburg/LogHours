@@ -7,7 +7,7 @@ import com.example.loghours.EmployersContract.Employers;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -27,7 +27,7 @@ public class AddEmployerActivity extends Activity {
 		setContentView(R.layout.activity_add_employer);
 		
 		
-        loadSpinner();
+        loadSpinner(this);
 		
 	}
 
@@ -46,32 +46,18 @@ public class AddEmployerActivity extends Activity {
     	
     	// put entry in database
     	
-    	// initiate helper
-    	LogsDbHelper mDbHelper = new LogsDbHelper(getBaseContext());
+    	DbFunctions entry = new DbFunctions(this);//AddEmployerActivity.
+    	entry.open();
     	
-    	// Gets the data repository in write mode
-    	SQLiteDatabase db = mDbHelper.getWritableDatabase();
-
-    	// Create a new map of values, where column names are the keys
-    	ContentValues values = new ContentValues();
-    	values.put(Employers.COLUMN_NAME_TITLE, employer);
-
-    	// Insert the new row, returning the primary key value of the new row
-    	try
+		long row = entry.insertEmployer(employer);
+		
+		if (row == -1)
     	{
-	    	db.insert(
-	    	         Employers.TABLE_NAME,
-	    	         null,
-	    	         values);
-	    	
+    		Toast.makeText(this, "Please enter unique value", Toast.LENGTH_LONG).show();
     	}
-    	catch(SQLiteException e)
-    	{
-    		Toast.makeText(getBaseContext(), "Must be unique", Toast.LENGTH_LONG).show();
-    		e.printStackTrace();
-    	}
-    	db.close();
-    	loadSpinner();
+		
+		entry.close();
+    	loadSpinner(this);
     }
     
     public void backToMain(View view) {
@@ -86,50 +72,22 @@ public class AddEmployerActivity extends Activity {
     	String employer = String.valueOf(employers_spinner.getSelectedItem());
     	
     	// remove entry in database
-    	
-    	// initiate helper
-    	LogsDbHelper mDbHelper = new LogsDbHelper(getBaseContext());
-    	
-    	// Gets the data repository in write mode
-    	SQLiteDatabase db = mDbHelper.getWritableDatabase();
-
-    	// Define 'where' part of query.
-    	String selection = Employers.COLUMN_NAME_TITLE + " LIKE ?";
-    	
-    	// Specify arguments in placeholder order.
-    	String[] selectionArgs = { employer };
-    	
-    	// Issue SQL statement.
-    	db.delete(Employers.TABLE_NAME, selection, selectionArgs);
-    	db.close();
-    	loadSpinner();
+    	DbFunctions entry = new DbFunctions(this);//AddEmployerActivity.
+    	entry.open();
+    	entry.removeEmployerFromDb(employer);
+    	entry.close();
+    	loadSpinner(this);
     }
     
-    private void loadSpinner() {
+    private void loadSpinner(Context c) {
     	// get employers from database
-		List<String> employers = new ArrayList<String>();
-		
-		// initiate helper
-    	LogsDbHelper mDbHelper = new LogsDbHelper(getBaseContext());
+    	DbFunctions entry = new DbFunctions(c);//AddEmployerActivity.
+    	entry.open();
+    	List<String> employers;
     	
-    	// Gets the data repository in write mode
-    	SQLiteDatabase db = mDbHelper.getReadableDatabase();
+    	employers = entry.getAllEmployers();
+    	entry.close();
     	
-    	// Select All Query
-        String selectQuery = "SELECT  * FROM " + Employers.TABLE_NAME;
-    	Cursor cursor = db.rawQuery(selectQuery, null);
-        
-        // looping through all rows and adding to list
-        if (cursor.moveToFirst()) {
-            do {
-            	employers.add(cursor.getString(1));
-            } while (cursor.moveToNext());
-        }
-         
-        // closing connection
-        cursor.close();
-        db.close();
-    	        
     	Spinner spinner;
 		spinner = (Spinner) findViewById(R.id.remove_employers_spinner);
 		// Create an ArrayAdapter using the string array and a default spinner layout
