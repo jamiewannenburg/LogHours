@@ -175,7 +175,7 @@ public class MainActivity extends Activity {
 	    	if (!file_content.equals(""))
 	    	{
 	    		// write to csv file
-	        	File file = generateCsvFile("Hours " + employer + " "+ yearMonth +".csv",file_content);
+	        	File file = generateCsvFile("Hours " + employer + " "+ yearMonth +".csv",file_content,this);
 	        	Intent intent = new Intent(this, DriveActivity.class);
 	        	intent.putExtra(FILE, String.valueOf(file));
 	        	startActivity(intent);
@@ -188,22 +188,22 @@ public class MainActivity extends Activity {
     	    	
     }
     
-    private File generateCsvFile(String sFileName, String file_content)
+    private File generateCsvFile(String sFileName, String file_content, Context c)
     {
     	
     	try
     	{
 	    	File root = getExternalFilesDir(null);
 	        File gpxfile = new File(root, sFileName);
-	        FileWriter writer = new FileWriter(gpxfile, true);
+	        FileWriter writer = new FileWriter(gpxfile, false);
 	    	writer.write(file_content);
-	    	writer.flush();
+	    	//writer.flush();
             writer.close();
             return gpxfile;
     	}
         catch(IOException e)
         {
-        	Toast.makeText(getBaseContext(), "Could not find a folder to write in", Toast.LENGTH_LONG).show();
+        	Toast.makeText(c, "Could not find a folder to write in", Toast.LENGTH_LONG).show();
             e.printStackTrace();
             return null;
         }

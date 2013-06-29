@@ -101477,7 +101477,9 @@ _____________________________________________________________________
 Interfaces (count = 1):
   + Class [java/lang/Runnable]
 
-Constant Pool (count = 114):
+Constant Pool (count = 121):
+  + String [Sruggeling to connect]
+  + String [file could not be found]
   + String [file uploaded: ]
   + String [text/csv]
   + Class [android/net/Uri]
@@ -101492,6 +101494,7 @@ Constant Pool (count = 114):
   + Class [java/io/File]
   + Class [java/io/IOException]
   + Class [java/lang/Boolean]
+  + Class [java/lang/NullPointerException]
   + Class [java/lang/Object]
   + Class [java/lang/Runnable]
   + Class [java/lang/StringBuilder]
@@ -101515,6 +101518,7 @@ Constant Pool (count = 114):
   + Methodref [java/io/File.getName ()Ljava/lang/String;]
   + Methodref [java/io/IOException.printStackTrace ()V]
   + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+  + Methodref [java/lang/NullPointerException.printStackTrace ()V]
   + Methodref [java/lang/Object.<init> ()V]
   + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
   + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
@@ -101560,6 +101564,7 @@ Constant Pool (count = 114):
   + Utf8 [<init>]
   + Utf8 [Code]
   + Utf8 [Lcom/jamiewannenburg/loghours/DriveActivity;]
+  + Utf8 [Sruggeling to connect]
   + Utf8 [StackMapTable]
   + Utf8 [a]
   + Utf8 [android/net/Uri]
@@ -101575,6 +101580,7 @@ Constant Pool (count = 114):
   + Utf8 [com/jamiewannenburg/loghours/DriveActivity]
   + Utf8 [com/jamiewannenburg/loghours/b]
   + Utf8 [d]
+  + Utf8 [file could not be found]
   + Utf8 [file uploaded: ]
   + Utf8 [getName]
   + Utf8 [getPath]
@@ -101582,6 +101588,7 @@ Constant Pool (count = 114):
   + Utf8 [java/io/File]
   + Utf8 [java/io/IOException]
   + Utf8 [java/lang/Boolean]
+  + Utf8 [java/lang/NullPointerException]
   + Utf8 [java/lang/Object]
   + Utf8 [java/lang/Runnable]
   + Utf8 [java/lang/StringBuilder]
@@ -101605,10 +101612,10 @@ Methods (count = 2):
     + Code attribute instructions (code length = 10, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] putfield #18
+      [2] putfield #21
         + Fieldref [com/jamiewannenburg/loghours/b.a Lcom/jamiewannenburg/loghours/DriveActivity;]
       [5] aload_0 v0
-      [6] invokespecial #38
+      [6] invokespecial #42
         + Methodref [java/lang/Object.<init> ()V]
       [9] return
       Code attribute exceptions (count = 0):
@@ -101617,112 +101624,134 @@ Methods (count = 2):
     Access flags: 0x1
       = public void run()
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 132, locals = 5, stack = 4):
-      [0] new #12
+    + Code attribute instructions (code length = 158, locals = 5, stack = 4):
+      [0] new #14
         + Class [java/io/File]
       [3] dup
-      [4] invokestatic #30
+      [4] invokestatic #33
         + Methodref [com/jamiewannenburg/loghours/DriveActivity.a ()Landroid/net/Uri;]
-      [7] invokevirtual #19
+      [7] invokevirtual #22
         + Methodref [android/net/Uri.getPath ()Ljava/lang/String;]
-      [10] invokespecial #34
+      [10] invokespecial #37
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [13] astore_1 v1
-      [14] new #5
+      [14] new #7
         + Class [com/google/a/a/c/g]
       [17] dup
-      [18] ldc #2
+      [18] ldc #4
         + String [text/csv]
       [20] aload_1 v1
-      [21] invokespecial #21
+      [21] invokespecial #24
         + Methodref [com/google/a/a/c/g.<init> (Ljava/lang/String;Ljava/io/File;)V]
       [24] astore_2 v2
-      [25] new #7
+      [25] new #9
         + Class [com/google/a/b/a/a/a]
       [28] dup
-      [29] invokespecial #23
+      [29] invokespecial #26
         + Methodref [com/google/a/b/a/a/a.<init> ()V]
       [32] astore_3 v3
       [33] aload_3 v3
       [34] aload_1 v1
-      [35] invokevirtual #35
+      [35] invokevirtual #38
         + Methodref [java/io/File.getName ()Ljava/lang/String;]
-      [38] invokevirtual #25
+      [38] invokevirtual #28
         + Methodref [com/google/a/b/a/a/a.b (Ljava/lang/String;)Lcom/google/a/b/a/a/a;]
       [41] pop
       [42] aload_3 v3
-      [43] ldc #2
+      [43] ldc #4
         + String [text/csv]
-      [45] invokevirtual #24
+      [45] invokevirtual #27
         + Methodref [com/google/a/b/a/a/a.a (Ljava/lang/String;)Lcom/google/a/b/a/a/a;]
       [48] pop
-      [49] invokestatic #32
+      [49] invokestatic #35
         + Methodref [com/jamiewannenburg/loghours/DriveActivity.b ()Lcom/google/a/b/a/a;]
-      [52] invokevirtual #22
+      [52] invokevirtual #25
         + Methodref [com/google/a/b/a/a.i ()Lcom/google/a/b/a/c;]
       [55] aload_3 v3
       [56] aload_2 v2
-      [57] invokevirtual #27
+      [57] invokevirtual #30
         + Methodref [com/google/a/b/a/c.a (Lcom/google/a/b/a/a/a;Lcom/google/a/a/c/b;)Lcom/google/a/b/a/d;]
       [60] iconst_1
-      [61] invokestatic #37
+      [61] invokestatic #40
         + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
-      [64] invokevirtual #28
+      [64] invokevirtual #31
         + Methodref [com/google/a/b/a/d.a (Ljava/lang/Boolean;)Lcom/google/a/b/a/d;]
-      [67] invokevirtual #29
+      [67] invokevirtual #32
         + Methodref [com/google/a/b/a/d.d ()Ljava/lang/Object;]
-      [70] checkcast #7
+      [70] checkcast #9
         + Class [com/google/a/b/a/a/a]
       [73] astore v4
       [75] aload v4
-      [77] ifnull +54 (target=131)
+      [77] ifnull +80 (target=157)
       [80] aload_0 v0
-      [81] getfield #18
+      [81] getfield #21
         + Fieldref [com/jamiewannenburg/loghours/b.a Lcom/jamiewannenburg/loghours/DriveActivity;]
-      [84] new #17
+      [84] new #20
         + Class [java/lang/StringBuilder]
       [87] dup
-      [88] ldc #1
+      [88] ldc #3
         + String [file uploaded: ]
-      [90] invokespecial #39
+      [90] invokespecial #43
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
       [93] aload v4
-      [95] invokevirtual #26
+      [95] invokevirtual #29
         + Methodref [com/google/a/b/a/a/a.c ()Ljava/lang/String;]
-      [98] invokevirtual #40
+      [98] invokevirtual #44
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [101] invokevirtual #41
+      [101] invokevirtual #45
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [104] invokevirtual #31
+      [104] invokevirtual #34
         + Methodref [com/jamiewannenburg/loghours/DriveActivity.a (Ljava/lang/String;)V]
-      [107] goto +24 (target=131)
+      [107] goto +50 (target=157)
       [110] astore_1 v1
       [111] aload_0 v0
-      [112] getfield #18
+      [112] getfield #21
         + Fieldref [com/jamiewannenburg/loghours/b.a Lcom/jamiewannenburg/loghours/DriveActivity;]
       [115] aload_1 v1
-      [116] invokevirtual #20
+      [116] invokevirtual #23
         + Methodref [com/google/a/a/b/a/a/b/a/e.d ()Landroid/content/Intent;]
       [119] iconst_2
-      [120] invokevirtual #33
+      [120] invokevirtual #36
         + Methodref [com/jamiewannenburg/loghours/DriveActivity.startActivityForResult (Landroid/content/Intent;I)V]
-      [123] goto +8 (target=131)
+      [123] goto +34 (target=157)
       [126] astore_1 v1
-      [127] aload_1 v1
-      [128] invokevirtual #36
+      [127] aload_0 v0
+      [128] getfield #21
+        + Fieldref [com/jamiewannenburg/loghours/b.a Lcom/jamiewannenburg/loghours/DriveActivity;]
+      [131] ldc #2
+        + String [file could not be found]
+      [133] invokevirtual #34
+        + Methodref [com/jamiewannenburg/loghours/DriveActivity.a (Ljava/lang/String;)V]
+      [136] aload_1 v1
+      [137] invokevirtual #39
         + Methodref [java/io/IOException.printStackTrace ()V]
-      [131] return
-      Code attribute exceptions (count = 2):
+      [140] goto +17 (target=157)
+      [143] astore_1 v1
+      [144] aload_0 v0
+      [145] getfield #21
+        + Fieldref [com/jamiewannenburg/loghours/b.a Lcom/jamiewannenburg/loghours/DriveActivity;]
+      [148] ldc #1
+        + String [Sruggeling to connect]
+      [150] invokevirtual #34
+        + Methodref [com/jamiewannenburg/loghours/DriveActivity.a (Ljava/lang/String;)V]
+      [153] aload_1 v1
+      [154] invokevirtual #41
+        + Methodref [java/lang/NullPointerException.printStackTrace ()V]
+      [157] return
+      Code attribute exceptions (count = 3):
       - ExceptionInfo (0 -> 107: 110):
       + Class [com/google/a/a/b/a/a/b/a/e]
       - ExceptionInfo (0 -> 107: 126):
       + Class [java/io/IOException]
+      - ExceptionInfo (0 -> 107: 143):
+      + Class [java/lang/NullPointerException]
       Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 4):
+      + Stack map table attribute (count = 5):
         - [107] Var: ..., Stack: (empty)
         - [110] Var: ..., Stack: [a:com/google/a/a/b/a/a/b/a/e]
         - [126] Var: ..., Stack: [a:java/io/IOException]
-        - [131] Var: ..., Stack: (empty)
+        - [143] Var: ..., Stack: [a:java/lang/NullPointerException]
+        - [157] Var: ..., Stack: (empty)
 
 Class file attributes (count = 0):
 
@@ -101960,7 +101989,7 @@ _____________________________________________________________________
 
 Interfaces (count = 0):
 
-Constant Pool (count = 285):
+Constant Pool (count = 282):
   + Integer [17367048]
   + Integer [17367049]
   + Integer [2130903042]
@@ -102027,7 +102056,7 @@ Constant Pool (count = 285):
   + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
   + Methodref [android/widget/Toast.show ()V]
   + Methodref [com/jamiewannenburg/loghours/MainActivity.a (Landroid/content/Context;)V]
-  + Methodref [com/jamiewannenburg/loghours/MainActivity.a (Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;]
+  + Methodref [com/jamiewannenburg/loghours/MainActivity.a (Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)Ljava/io/File;]
   + Methodref [com/jamiewannenburg/loghours/MainActivity.findViewById (I)Landroid/view/View;]
   + Methodref [com/jamiewannenburg/loghours/MainActivity.getBaseContext ()Landroid/content/Context;]
   + Methodref [com/jamiewannenburg/loghours/MainActivity.getExternalFilesDir (Ljava/lang/String;)Ljava/io/File;]
@@ -102044,7 +102073,6 @@ Constant Pool (count = 285):
   + Methodref [java/io/File.<init> (Ljava/io/File;Ljava/lang/String;)V]
   + Methodref [java/io/FileWriter.<init> (Ljava/io/File;Z)V]
   + Methodref [java/io/FileWriter.close ()V]
-  + Methodref [java/io/FileWriter.flush ()V]
   + Methodref [java/io/FileWriter.write (Ljava/lang/String;)V]
   + Methodref [java/io/IOException.printStackTrace ()V]
   + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
@@ -102075,7 +102103,7 @@ Constant Pool (count = 285):
   + NameAndType [US Ljava/util/Locale;]
   + NameAndType [a ()Lcom/jamiewannenburg/loghours/a;]
   + NameAndType [a (Landroid/content/Context;)V]
-  + NameAndType [a (Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;]
+  + NameAndType [a (Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)Ljava/io/File;]
   + NameAndType [a Landroid/widget/Spinner;]
   + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
   + NameAndType [b ()V]
@@ -102087,7 +102115,6 @@ Constant Pool (count = 285):
   + NameAndType [edit ()Landroid/content/SharedPreferences$Editor;]
   + NameAndType [equals (Ljava/lang/Object;)Z]
   + NameAndType [findViewById (I)Landroid/view/View;]
-  + NameAndType [flush ()V]
   + NameAndType [format (Ljava/util/Date;)Ljava/lang/String;]
   + NameAndType [getBaseContext ()Landroid/content/Context;]
   + NameAndType [getExternalFilesDir (Ljava/lang/String;)Ljava/io/File;]
@@ -102156,8 +102183,8 @@ Constant Pool (count = 285):
   + Utf8 [(Ljava/lang/String;Ljava/lang/String;)J]
   + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
   + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;]
-  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;]
   + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)Ljava/io/File;]
   + Utf8 [(Ljava/lang/String;Ljava/util/Locale;)V]
   + Utf8 [(Ljava/util/Date;)Ljava/lang/String;]
   + Utf8 [.csv]
@@ -102199,7 +102226,6 @@ Constant Pool (count = 285):
   + Utf8 [edit]
   + Utf8 [equals]
   + Utf8 [findViewById]
-  + Utf8 [flush]
   + Utf8 [format]
   + Utf8 [getBaseContext]
   + Utf8 [getExternalFilesDir]
@@ -102335,7 +102361,7 @@ Methods (count = 8):
         + Methodref [com/jamiewannenburg/loghours/MainActivity.getString (I)Ljava/lang/String;]
       [22] ldc #9
         + String []
-      [24] invokeinterface #98
+      [24] invokeinterface #97
         + InterfaceMethodref [android/content/SharedPreferences.getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
       [29] astore_3 v3
       [30] aload_2 v2
@@ -102346,7 +102372,7 @@ Methods (count = 8):
         + Methodref [com/jamiewannenburg/loghours/MainActivity.getString (I)Ljava/lang/String;]
       [37] ldc #9
         + String []
-      [39] invokeinterface #98
+      [39] invokeinterface #97
         + InterfaceMethodref [android/content/SharedPreferences.getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
       [44] astore v4
       [46] new #44
@@ -102356,19 +102382,19 @@ Methods (count = 8):
         + String [MM]
       [52] getstatic #52
         + Fieldref [java/util/Locale.US Ljava/util/Locale;]
-      [55] invokespecial #94
+      [55] invokespecial #93
         + Methodref [java/text/SimpleDateFormat.<init> (Ljava/lang/String;Ljava/util/Locale;)V]
       [58] new #45
         + Class [java/util/Date]
       [61] dup
-      [62] invokespecial #96
+      [62] invokespecial #95
         + Methodref [java/util/Date.<init> ()V]
-      [65] invokevirtual #95
+      [65] invokevirtual #94
         + Methodref [java/text/SimpleDateFormat.format (Ljava/util/Date;)Ljava/lang/String;]
       [68] astore v5
       [70] aload v4
       [72] aload v5
-      [74] invokevirtual #88
+      [74] invokevirtual #87
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [77] ifne +16 (target=93)
       [80] aload_0 v0
@@ -102382,7 +102408,7 @@ Methods (count = 8):
       [90] invokevirtual #66
         + Methodref [android/widget/Toast.show ()V]
       [93] aload_2 v2
-      [94] invokeinterface #97
+      [94] invokeinterface #96
         + InterfaceMethodref [android/content/SharedPreferences.edit ()Landroid/content/SharedPreferences$Editor;]
       [99] astore v6
       [101] aload v6
@@ -102392,11 +102418,11 @@ Methods (count = 8):
       [106] invokevirtual #73
         + Methodref [com/jamiewannenburg/loghours/MainActivity.getString (I)Ljava/lang/String;]
       [109] aload v5
-      [111] invokeinterface #100
+      [111] invokeinterface #99
         + InterfaceMethodref [android/content/SharedPreferences$Editor.putString (Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;]
       [116] pop
       [117] aload v6
-      [119] invokeinterface #99
+      [119] invokeinterface #98
         + InterfaceMethodref [android/content/SharedPreferences$Editor.commit ()Z]
       [124] pop
       [125] new #38
@@ -102422,26 +102448,26 @@ Methods (count = 8):
       [156] iconst_0
       [157] istore v10
       [159] aload v8
-      [161] invokeinterface #104
+      [161] invokeinterface #103
         + InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
       [166] astore v12
       [168] goto +31 (target=199)
       [171] aload v12
-      [173] invokeinterface #103
+      [173] invokeinterface #102
         + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
       [178] checkcast #42
         + Class [java/lang/String]
       [181] astore v11
       [183] aload v11
       [185] aload_3 v3
-      [186] invokevirtual #88
+      [186] invokevirtual #87
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [189] ifeq +7 (target=196)
       [192] iload v9
       [194] istore v10
       [196] iinc v9, 1
       [199] aload v12
-      [201] invokeinterface #102
+      [201] invokeinterface #101
         + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
       [206] ifne -35 (target=171)
       [209] new #31
@@ -102485,7 +102511,7 @@ Methods (count = 8):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 48, locals = 3, stack = 4):
       [0] aload_1 v1
-      [1] invokeinterface #101
+      [1] invokeinterface #100
         + InterfaceMethodref [android/view/MenuItem.getItemId ()I]
       [6] tableswitch (1 offsets, default=36) (target=42)
         2131165192: offset = 18, target = 24
@@ -102527,14 +102553,14 @@ Methods (count = 8):
         + String [yyyy-MM-dd kk:mm:ss]
       [6] getstatic #52
         + Fieldref [java/util/Locale.US Ljava/util/Locale;]
-      [9] invokespecial #94
+      [9] invokespecial #93
         + Methodref [java/text/SimpleDateFormat.<init> (Ljava/lang/String;Ljava/util/Locale;)V]
       [12] new #45
         + Class [java/util/Date]
       [15] dup
-      [16] invokespecial #96
+      [16] invokespecial #95
         + Methodref [java/util/Date.<init> ()V]
-      [19] invokevirtual #95
+      [19] invokevirtual #94
         + Methodref [java/text/SimpleDateFormat.format (Ljava/util/Date;)Ljava/lang/String;]
       [22] astore_2 v2
       [23] aload_0 v0
@@ -102542,7 +102568,7 @@ Methods (count = 8):
         + Fieldref [com/jamiewannenburg/loghours/MainActivity.a Landroid/widget/Spinner;]
       [27] invokevirtual #62
         + Methodref [android/widget/Spinner.getSelectedItem ()Ljava/lang/Object;]
-      [30] invokestatic #90
+      [30] invokestatic #89
         + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
       [33] astore_3 v3
       [34] aload_0 v0
@@ -102558,7 +102584,7 @@ Methods (count = 8):
         + Methodref [android/content/Context.getSharedPreferences (Ljava/lang/String;I)Landroid/content/SharedPreferences;]
       [48] astore v4
       [50] aload v4
-      [52] invokeinterface #97
+      [52] invokeinterface #96
         + InterfaceMethodref [android/content/SharedPreferences.edit ()Landroid/content/SharedPreferences$Editor;]
       [57] astore v5
       [59] aload v5
@@ -102568,17 +102594,17 @@ Methods (count = 8):
       [64] invokevirtual #73
         + Methodref [com/jamiewannenburg/loghours/MainActivity.getString (I)Ljava/lang/String;]
       [67] aload_3 v3
-      [68] invokeinterface #100
+      [68] invokeinterface #99
         + InterfaceMethodref [android/content/SharedPreferences$Editor.putString (Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;]
       [73] pop
       [74] aload v5
-      [76] invokeinterface #99
+      [76] invokeinterface #98
         + InterfaceMethodref [android/content/SharedPreferences$Editor.commit ()Z]
       [81] pop
       [82] aload_3 v3
       [83] ldc #19
         + String [null]
-      [85] invokevirtual #88
+      [85] invokevirtual #87
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [88] ifne +89 (target=177)
       [91] new #38
@@ -102625,7 +102651,7 @@ Methods (count = 8):
       [152] ldc #18
         + String [com.jamiewannenburg.loghours.MESSAGE]
       [154] lload v7
-      [156] invokestatic #89
+      [156] invokestatic #88
         + Methodref [java/lang/String.valueOf (J)Ljava/lang/String;]
       [159] invokevirtual #58
         + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
@@ -102658,7 +102684,7 @@ Methods (count = 8):
     Access flags: 0x1
       = public void uploadToDrive(android.view.View)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 193, locals = 9, stack = 4):
+    + Code attribute instructions (code length = 194, locals = 9, stack = 4):
       [0] new #44
         + Class [java/text/SimpleDateFormat]
       [3] dup
@@ -102666,14 +102692,14 @@ Methods (count = 8):
         + String [yyyy MMMM]
       [6] getstatic #52
         + Fieldref [java/util/Locale.US Ljava/util/Locale;]
-      [9] invokespecial #94
+      [9] invokespecial #93
         + Methodref [java/text/SimpleDateFormat.<init> (Ljava/lang/String;Ljava/util/Locale;)V]
       [12] new #45
         + Class [java/util/Date]
       [15] dup
-      [16] invokespecial #96
+      [16] invokespecial #95
         + Methodref [java/util/Date.<init> ()V]
-      [19] invokevirtual #95
+      [19] invokevirtual #94
         + Methodref [java/text/SimpleDateFormat.format (Ljava/util/Date;)Ljava/lang/String;]
       [22] astore_2 v2
       [23] new #44
@@ -102683,14 +102709,14 @@ Methods (count = 8):
         + String [yyyy-MM]
       [29] getstatic #52
         + Fieldref [java/util/Locale.US Ljava/util/Locale;]
-      [32] invokespecial #94
+      [32] invokespecial #93
         + Methodref [java/text/SimpleDateFormat.<init> (Ljava/lang/String;Ljava/util/Locale;)V]
       [35] new #45
         + Class [java/util/Date]
       [38] dup
-      [39] invokespecial #96
+      [39] invokespecial #95
         + Methodref [java/util/Date.<init> ()V]
-      [42] invokevirtual #95
+      [42] invokevirtual #94
         + Methodref [java/text/SimpleDateFormat.format (Ljava/util/Date;)Ljava/lang/String;]
       [45] astore_3 v3
       [46] aload_0 v0
@@ -102698,15 +102724,15 @@ Methods (count = 8):
         + Fieldref [com/jamiewannenburg/loghours/MainActivity.a Landroid/widget/Spinner;]
       [50] invokevirtual #62
         + Methodref [android/widget/Spinner.getSelectedItem ()Ljava/lang/Object;]
-      [53] invokestatic #90
+      [53] invokestatic #89
         + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
       [56] astore v4
       [58] aload v4
       [60] ldc #19
         + String [null]
-      [62] invokevirtual #88
+      [62] invokevirtual #87
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
-      [65] ifne +117 (target=182)
+      [65] ifne +118 (target=183)
       [68] new #38
         + Class [com/jamiewannenburg/loghours/a]
       [71] dup
@@ -102730,135 +102756,131 @@ Methods (count = 8):
       [99] aload v6
       [101] ldc #9
         + String []
-      [103] invokevirtual #88
+      [103] invokevirtual #87
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
-      [106] ifne +86 (target=192)
+      [106] ifne +87 (target=193)
       [109] aload_0 v0
       [110] new #43
         + Class [java/lang/StringBuilder]
       [113] dup
       [114] ldc #14
         + String [Hours ]
-      [116] invokespecial #91
+      [116] invokespecial #90
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
       [119] aload v4
-      [121] invokevirtual #92
+      [121] invokevirtual #91
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [124] ldc #10
         + String [ ]
-      [126] invokevirtual #92
+      [126] invokevirtual #91
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [129] aload_2 v2
-      [130] invokevirtual #92
+      [130] invokevirtual #91
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [133] ldc #11
         + String [.csv]
-      [135] invokevirtual #92
+      [135] invokevirtual #91
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [138] invokevirtual #93
+      [138] invokevirtual #92
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [141] aload v6
-      [143] invokespecial #68
-        + Methodref [com/jamiewannenburg/loghours/MainActivity.a (Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;]
-      [146] astore v7
-      [148] new #25
+      [143] aload_0 v0
+      [144] invokespecial #68
+        + Methodref [com/jamiewannenburg/loghours/MainActivity.a (Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)Ljava/io/File;]
+      [147] astore v7
+      [149] new #25
         + Class [android/content/Intent]
-      [151] dup
-      [152] aload_0 v0
-      [153] ldc #35
+      [152] dup
+      [153] aload_0 v0
+      [154] ldc #35
         + Class [com/jamiewannenburg/loghours/DriveActivity]
-      [155] invokespecial #57
+      [156] invokespecial #57
         + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
-      [158] astore v8
-      [160] aload v8
-      [162] ldc #18
+      [159] astore v8
+      [161] aload v8
+      [163] ldc #18
         + String [com.jamiewannenburg.loghours.MESSAGE]
-      [164] aload v7
-      [166] invokestatic #90
+      [165] aload v7
+      [167] invokestatic #89
         + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
-      [169] invokevirtual #58
+      [170] invokevirtual #58
         + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
-      [172] pop
-      [173] aload_0 v0
-      [174] aload v8
-      [176] invokevirtual #75
+      [173] pop
+      [174] aload_0 v0
+      [175] aload v8
+      [177] invokevirtual #75
         + Methodref [com/jamiewannenburg/loghours/MainActivity.startActivity (Landroid/content/Intent;)V]
-      [179] goto +13 (target=192)
-      [182] aload_0 v0
-      [183] ldc #16
+      [180] goto +13 (target=193)
+      [183] aload_0 v0
+      [184] ldc #16
         + String [Please add an employer]
-      [185] iconst_1
-      [186] invokestatic #65
+      [186] iconst_1
+      [187] invokestatic #65
         + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
-      [189] invokevirtual #66
+      [190] invokevirtual #66
         + Methodref [android/widget/Toast.show ()V]
-      [192] return
+      [193] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 3):
-        - [179] Var: ...[a:java/lang/String][a:java/lang/String][a:java/lang/String], Stack: (empty)
-        - [182] Var: ..., Stack: (empty)
-        - [192] Var: ..., Stack: (empty)
-  + Method:       a(Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;
+        - [180] Var: ...[a:java/lang/String][a:java/lang/String][a:java/lang/String], Stack: (empty)
+        - [183] Var: ..., Stack: (empty)
+        - [193] Var: ..., Stack: (empty)
+  + Method:       a(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)Ljava/io/File;
     Access flags: 0x2
-      = private java.io.File a(java.lang.String,java.lang.String)
+      = private java.io.File a(java.lang.String,java.lang.String,android.content.Context)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 68, locals = 6, stack = 4):
+    + Code attribute instructions (code length = 64, locals = 7, stack = 4):
       [0] aload_0 v0
       [1] aconst_null
       [2] invokevirtual #71
         + Methodref [com/jamiewannenburg/loghours/MainActivity.getExternalFilesDir (Ljava/lang/String;)Ljava/io/File;]
-      [5] astore_3 v3
-      [6] new #39
+      [5] astore v4
+      [7] new #39
         + Class [java/io/File]
-      [9] dup
-      [10] aload_3 v3
-      [11] aload_1 v1
-      [12] invokespecial #82
+      [10] dup
+      [11] aload v4
+      [13] aload_1 v1
+      [14] invokespecial #82
         + Methodref [java/io/File.<init> (Ljava/io/File;Ljava/lang/String;)V]
-      [15] astore v4
-      [17] new #40
+      [17] astore v5
+      [19] new #40
         + Class [java/io/FileWriter]
-      [20] dup
-      [21] aload v4
-      [23] iconst_1
-      [24] invokespecial #83
+      [22] dup
+      [23] aload v5
+      [25] iconst_0
+      [26] invokespecial #83
         + Methodref [java/io/FileWriter.<init> (Ljava/io/File;Z)V]
-      [27] astore v5
-      [29] aload v5
-      [31] aload_2 v2
-      [32] invokevirtual #86
+      [29] astore v6
+      [31] aload v6
+      [33] aload_2 v2
+      [34] invokevirtual #85
         + Methodref [java/io/FileWriter.write (Ljava/lang/String;)V]
-      [35] aload v5
-      [37] invokevirtual #85
-        + Methodref [java/io/FileWriter.flush ()V]
-      [40] aload v5
-      [42] invokevirtual #84
+      [37] aload v6
+      [39] invokevirtual #84
         + Methodref [java/io/FileWriter.close ()V]
-      [45] aload v4
-      [47] areturn
-      [48] astore_3 v3
-      [49] aload_0 v0
-      [50] invokevirtual #70
-        + Methodref [com/jamiewannenburg/loghours/MainActivity.getBaseContext ()Landroid/content/Context;]
-      [53] ldc #13
+      [42] aload v5
+      [44] areturn
+      [45] astore v4
+      [47] aload_3 v3
+      [48] ldc #13
         + String [Could not find a folder to write in]
-      [55] iconst_1
-      [56] invokestatic #65
+      [50] iconst_1
+      [51] invokestatic #65
         + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
-      [59] invokevirtual #66
+      [54] invokevirtual #66
         + Methodref [android/widget/Toast.show ()V]
-      [62] aload_3 v3
-      [63] invokevirtual #87
+      [57] aload v4
+      [59] invokevirtual #86
         + Methodref [java/io/IOException.printStackTrace ()V]
-      [66] aconst_null
-      [67] areturn
+      [62] aconst_null
+      [63] areturn
       Code attribute exceptions (count = 1):
-      - ExceptionInfo (0 -> 47: 48):
+      - ExceptionInfo (0 -> 44: 45):
       + Class [java/io/IOException]
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 1):
-        - [48] Var: ..., Stack: [a:java/io/IOException]
+        - [45] Var: ..., Stack: [a:java/io/IOException]
 
 Class file attributes (count = 0):
 

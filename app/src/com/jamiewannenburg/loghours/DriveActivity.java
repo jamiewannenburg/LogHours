@@ -92,9 +92,14 @@ public class DriveActivity extends Activity {
 
           }
         } catch (UserRecoverableAuthIOException e) {
-          startActivityForResult(e.getIntent(), REQUEST_AUTHORIZATION);
+        	startActivityForResult(e.getIntent(), REQUEST_AUTHORIZATION);
+        	
         } catch (IOException e) {
-          e.printStackTrace();
+        	showToast("file could not be found");
+        	e.printStackTrace();
+        } catch (NullPointerException e) {
+        	showToast("Sruggeling to connect");
+        	e.printStackTrace();
         }
       }
     });
