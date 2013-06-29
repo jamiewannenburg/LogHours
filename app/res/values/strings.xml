@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Log Hours</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="start_message">Start Log Time</string>
+    <string name="stop_message">Stop Log Time</string>
+    <string name="menu_add_employer">Add Employer</string>
+    <string name="start">Start</string>
+    <string name="drive_button">Upload to Drive</string>
+    <string name="stop">Stop</string>
+    <string name="title_activity_stop_logger">Stop Logger</string>
+    <string name="employers_prompt">Choose Employer</string>
+    <string name="title_activity_drive">Drive</string>
+    <string name="drive_back_button">Back</string>
+    <string name="add_employer_button">Add</string>
+    <string name="remove_employer_button">Remove</string>
+    <string name="add_employer_back_button">Back</string>
+    <string name="add_employer_hint">Enter Employer Name</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_add_employer">Add Employer</string>
+    <string name="preference_file_key">com.example.myapp.PREFERENCE_FILE_KEY</string>
+    <string name="empoyer_selector_value">com.example.myapp.EMPLOYER_SELECTOR_VALUE</string>
+    <string name="last_month">com.example.myapp.LAST_MONTH</string>
+
+</resources>
