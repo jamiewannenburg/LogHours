@@ -19,7 +19,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.loghours.MainActivity"
+            android:name="com.jamiewannenburg.loghours.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,15 +28,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.loghours.StopLoggerActivity"
+            android:name="com.jamiewannenburg.loghours.StopLoggerActivity"
             android:label="@string/title_activity_stop_logger" >
         </activity>
         <activity
-            android:name="com.example.loghours.DriveActivity"
+            android:name="com.jamiewannenburg.loghours.DriveActivity"
             android:label="@string/title_activity_drive" >
         </activity>
         <activity
-            android:name="com.example.loghours.AddEmployerActivity"
+            android:name="com.jamiewannenburg.loghours.AddEmployerActivity"
             android:label="@string/title_activity_add_employer" >
         </activity>
     </application>

@@ -1,10 +1,9 @@
-package com.example.loghours;
+package com.jamiewannenburg.loghours;
 
 import java.io.IOException;
 
 import android.accounts.AccountManager;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;

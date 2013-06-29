@@ -1,7 +1,6 @@
-package com.example.loghours;
+package com.jamiewannenburg.loghours;
 
 import android.provider.BaseColumns;
-import com.jamiewannenburg.loghours.R;
 
 public final class EmployersContract {
 	// To prevent someone from accidentally instantiating the contract class,

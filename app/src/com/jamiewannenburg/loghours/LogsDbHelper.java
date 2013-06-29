@@ -1,8 +1,7 @@
-package com.example.loghours;
+package com.jamiewannenburg.loghours;
 
-import com.example.loghours.EmployersContract.Employers;
-import com.example.loghours.LogsContract.Logs;
-import com.jamiewannenburg.loghours.R;
+import com.jamiewannenburg.loghours.EmployersContract.Employers;
+import com.jamiewannenburg.loghours.LogsContract.Logs;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

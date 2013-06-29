@@ -1,4 +1,4 @@
-package com.example.loghours;
+package com.jamiewannenburg.loghours;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -22,8 +22,8 @@ import android.widget.Toast;
 import com.jamiewannenburg.loghours.R;
 
 public class MainActivity extends Activity {
-	public final static String FILE = "com.example.loghours.MESSAGE";
-	public final static String ROW_ID = "com.example.loghours.MESSAGE";
+	public final static String FILE = "com.jamiewannenburg.loghours.MESSAGE";
+	public final static String ROW_ID = "com.jamiewannenburg.loghours.MESSAGE";
 
 	// spinner element
 	Spinner spinner;

@@ -4,7 +4,7 @@ import android.test.ActivityInstrumentationTestCase2;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 
-import com.example.loghours.AddEmployerActivity;
+import com.jamiewannenburg.loghours.AddEmployerActivity;
 
 public class AddEmployerActivityTest extends
 		ActivityInstrumentationTestCase2<AddEmployerActivity> {
@@ -14,7 +14,7 @@ public class AddEmployerActivityTest extends
 	private SpinnerAdapter mPlanetData;
 	  
 	public AddEmployerActivityTest() {
-	    super("com.example.loghours", AddEmployerActivity.class);
+	    super("com.jamiewannenburg.loghours", AddEmployerActivity.class);
 	  } // end of SpinnerActivityTest constructor definition
 	@Override
 	  protected void setUp() throws Exception {
@@ -25,7 +25,7 @@ public class AddEmployerActivityTest extends
 	    mActivity = getActivity();
 
 	    mSpinner = (Spinner) mActivity.findViewById(
-	    		  com.example.loghours.R.id.remove_employers_spinner
+	    		  com.jamiewannenburg.loghours.R.id.remove_employers_spinner
 	      );
 
 	      mPlanetData = mSpinner.getAdapter();

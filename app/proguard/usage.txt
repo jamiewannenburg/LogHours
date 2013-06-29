@@ -665,34 +665,6 @@ android.support.v4.widget.SearchViewCompatHoneycomb$OnQueryTextListenerCompatBri
 android.support.v4.widget.SimpleCursorAdapter
 android.support.v4.widget.SimpleCursorAdapter$CursorToStringConverter
 android.support.v4.widget.SimpleCursorAdapter$ViewBinder
-com.example.loghours.BuildConfig
-com.example.loghours.DriveActivity:
-    static final int REQUEST_ACCOUNT_PICKER
-    static final int REQUEST_AUTHORIZATION
-com.example.loghours.EmployersContract
-com.example.loghours.EmployersContract$Employers
-com.example.loghours.LogsContract
-com.example.loghours.LogsContract$Logs
-com.example.loghours.LogsDbHelper:
-    private static final java.lang.String TEXT_TYPE
-    private static final java.lang.String COMMA_SEP
-    private static final java.lang.String SQL_CREATE_LOGS_ENTRIES
-    private static final java.lang.String SQL_CREATE_EMPLOYERS_ENTRIES
-    private static final java.lang.String SQL_DELETE_LOGS_ENTRIES
-    private static final java.lang.String SQL_DELETE_EMPLOYERS_ENTRIES
-    public static final int DATABASE_VERSION
-    public static final java.lang.String DATABASE_NAME
-com.example.loghours.MainActivity:
-    public static final java.lang.String FILE
-    public static final java.lang.String ROW_ID
-com.example.loghours.R
-com.example.loghours.R$attr
-com.example.loghours.R$drawable
-com.example.loghours.R$id
-com.example.loghours.R$layout
-com.example.loghours.R$menu
-com.example.loghours.R$string
-com.example.loghours.R$style
 com.fasterxml.jackson.core.Base64Variant
 com.fasterxml.jackson.core.Base64Variants
 com.fasterxml.jackson.core.FormatSchema
@@ -3937,6 +3909,34 @@ com.google.gson.stream.MalformedJsonException:
     private static final long serialVersionUID
     33:37:public MalformedJsonException(java.lang.String,java.lang.Throwable)
     39:43:public MalformedJsonException(java.lang.Throwable)
+com.jamiewannenburg.loghours.BuildConfig
+com.jamiewannenburg.loghours.DriveActivity:
+    static final int REQUEST_ACCOUNT_PICKER
+    static final int REQUEST_AUTHORIZATION
+com.jamiewannenburg.loghours.EmployersContract
+com.jamiewannenburg.loghours.EmployersContract$Employers
+com.jamiewannenburg.loghours.LogsContract
+com.jamiewannenburg.loghours.LogsContract$Logs
+com.jamiewannenburg.loghours.LogsDbHelper:
+    private static final java.lang.String TEXT_TYPE
+    private static final java.lang.String COMMA_SEP
+    private static final java.lang.String SQL_CREATE_LOGS_ENTRIES
+    private static final java.lang.String SQL_CREATE_EMPLOYERS_ENTRIES
+    private static final java.lang.String SQL_DELETE_LOGS_ENTRIES
+    private static final java.lang.String SQL_DELETE_EMPLOYERS_ENTRIES
+    public static final int DATABASE_VERSION
+    public static final java.lang.String DATABASE_NAME
+com.jamiewannenburg.loghours.MainActivity:
+    public static final java.lang.String FILE
+    public static final java.lang.String ROW_ID
+com.jamiewannenburg.loghours.R
+com.jamiewannenburg.loghours.R$attr
+com.jamiewannenburg.loghours.R$drawable
+com.jamiewannenburg.loghours.R$id
+com.jamiewannenburg.loghours.R$layout
+com.jamiewannenburg.loghours.R$menu
+com.jamiewannenburg.loghours.R$string
+com.jamiewannenburg.loghours.R$style
 javax.annotation.CheckForNull
 javax.annotation.CheckForSigned
 javax.annotation.CheckReturnValue

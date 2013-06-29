@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.example.loghours.test;
+package com.jamiewannenburg.loghours.test;
 
 public final class R {
     public static final class attr {

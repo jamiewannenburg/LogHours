@@ -45,60 +45,6 @@ android.support.v4.view.ViewPager: void setPageMarginDrawable(int)
 android.support.v4.view.ViewPager: void setScrollingCacheEnabled(boolean)
 android.support.v4.view.ViewPager$SavedState
 android.support.v4.view.ViewPager$SavedState: android.os.Parcelable$Creator CREATOR
-com.example.loghours.AddEmployerActivity
-com.example.loghours.AddEmployerActivity: AddEmployerActivity()
-com.example.loghours.AddEmployerActivity: void addEmployer(android.view.View)
-com.example.loghours.AddEmployerActivity: void backToMain(android.view.View)
-com.example.loghours.AddEmployerActivity: void removeEmployer(android.view.View)
-com.example.loghours.DriveActivity
-com.example.loghours.DriveActivity: DriveActivity()
-com.example.loghours.MainActivity
-com.example.loghours.MainActivity: MainActivity()
-com.example.loghours.MainActivity: void startHourLogger(android.view.View)
-com.example.loghours.MainActivity: void uploadToDrive(android.view.View)
-com.example.loghours.R$drawable: int ic_launcher
-com.example.loghours.R$id: int add_employer_text
-com.example.loghours.R$id: int button1
-com.example.loghours.R$id: int button2
-com.example.loghours.R$id: int button3
-com.example.loghours.R$id: int employers_spinner
-com.example.loghours.R$id: int menu_add_employer
-com.example.loghours.R$id: int remove_employers_spinner
-com.example.loghours.R$id: int textView1
-com.example.loghours.R$layout: int activity_add_employer
-com.example.loghours.R$layout: int activity_drive
-com.example.loghours.R$layout: int activity_main
-com.example.loghours.R$layout: int activity_stop_logger
-com.example.loghours.R$menu: int activity_add_employer
-com.example.loghours.R$menu: int activity_drive
-com.example.loghours.R$menu: int activity_main
-com.example.loghours.R$menu: int activity_stop_logger
-com.example.loghours.R$string: int add_employer_back_button
-com.example.loghours.R$string: int add_employer_button
-com.example.loghours.R$string: int add_employer_hint
-com.example.loghours.R$string: int app_name
-com.example.loghours.R$string: int drive_back_button
-com.example.loghours.R$string: int drive_button
-com.example.loghours.R$string: int employers_prompt
-com.example.loghours.R$string: int empoyer_selector_value
-com.example.loghours.R$string: int hello_world
-com.example.loghours.R$string: int last_month
-com.example.loghours.R$string: int menu_add_employer
-com.example.loghours.R$string: int menu_settings
-com.example.loghours.R$string: int preference_file_key
-com.example.loghours.R$string: int remove_employer_button
-com.example.loghours.R$string: int start
-com.example.loghours.R$string: int start_message
-com.example.loghours.R$string: int stop
-com.example.loghours.R$string: int stop_message
-com.example.loghours.R$string: int title_activity_add_employer
-com.example.loghours.R$string: int title_activity_drive
-com.example.loghours.R$string: int title_activity_stop_logger
-com.example.loghours.R$style: int AppBaseTheme
-com.example.loghours.R$style: int AppTheme
-com.example.loghours.StopLoggerActivity
-com.example.loghours.StopLoggerActivity: StopLoggerActivity()
-com.example.loghours.StopLoggerActivity: void stopHourLogger(android.view.View)
 com.fasterxml.jackson.core.JsonEncoding: com.fasterxml.jackson.core.JsonEncoding[] values()
 com.fasterxml.jackson.core.JsonEncoding: com.fasterxml.jackson.core.JsonEncoding valueOf(java.lang.String)
 com.fasterxml.jackson.core.JsonFactory$Feature: com.fasterxml.jackson.core.JsonFactory$Feature[] values()
@@ -740,6 +686,63 @@ com.google.gson.stream.JsonScope: com.google.gson.stream.JsonScope[] values()
 com.google.gson.stream.JsonScope: com.google.gson.stream.JsonScope valueOf(java.lang.String)
 com.google.gson.stream.JsonToken: com.google.gson.stream.JsonToken[] values()
 com.google.gson.stream.JsonToken: com.google.gson.stream.JsonToken valueOf(java.lang.String)
+com.jamiewannenburg.loghours.AddEmployerActivity
+com.jamiewannenburg.loghours.AddEmployerActivity: AddEmployerActivity()
+com.jamiewannenburg.loghours.AddEmployerActivity: void addEmployer(android.view.View)
+com.jamiewannenburg.loghours.AddEmployerActivity: void backToMain(android.view.View)
+com.jamiewannenburg.loghours.AddEmployerActivity: void removeEmployer(android.view.View)
+com.jamiewannenburg.loghours.DriveActivity
+com.jamiewannenburg.loghours.DriveActivity: DriveActivity()
+com.jamiewannenburg.loghours.DriveActivity: void backToMain(android.view.View)
+com.jamiewannenburg.loghours.MainActivity
+com.jamiewannenburg.loghours.MainActivity: MainActivity()
+com.jamiewannenburg.loghours.MainActivity: void startHourLogger(android.view.View)
+com.jamiewannenburg.loghours.MainActivity: void uploadToDrive(android.view.View)
+com.jamiewannenburg.loghours.R$drawable: int ic_launcher
+com.jamiewannenburg.loghours.R$drawable: int my_ic_launcher
+com.jamiewannenburg.loghours.R$id: int add_employer_text
+com.jamiewannenburg.loghours.R$id: int button1
+com.jamiewannenburg.loghours.R$id: int button2
+com.jamiewannenburg.loghours.R$id: int button3
+com.jamiewannenburg.loghours.R$id: int drive_back_button
+com.jamiewannenburg.loghours.R$id: int employers_spinner
+com.jamiewannenburg.loghours.R$id: int menu_add_employer
+com.jamiewannenburg.loghours.R$id: int remove_employers_spinner
+com.jamiewannenburg.loghours.R$id: int textView1
+com.jamiewannenburg.loghours.R$layout: int activity_add_employer
+com.jamiewannenburg.loghours.R$layout: int activity_drive
+com.jamiewannenburg.loghours.R$layout: int activity_main
+com.jamiewannenburg.loghours.R$layout: int activity_stop_logger
+com.jamiewannenburg.loghours.R$menu: int activity_add_employer
+com.jamiewannenburg.loghours.R$menu: int activity_drive
+com.jamiewannenburg.loghours.R$menu: int activity_main
+com.jamiewannenburg.loghours.R$menu: int activity_stop_logger
+com.jamiewannenburg.loghours.R$string: int add_employer_back_button
+com.jamiewannenburg.loghours.R$string: int add_employer_button
+com.jamiewannenburg.loghours.R$string: int add_employer_hint
+com.jamiewannenburg.loghours.R$string: int app_name
+com.jamiewannenburg.loghours.R$string: int drive_back_button
+com.jamiewannenburg.loghours.R$string: int drive_button
+com.jamiewannenburg.loghours.R$string: int employers_prompt
+com.jamiewannenburg.loghours.R$string: int empoyer_selector_value
+com.jamiewannenburg.loghours.R$string: int hello_world
+com.jamiewannenburg.loghours.R$string: int last_month
+com.jamiewannenburg.loghours.R$string: int menu_add_employer
+com.jamiewannenburg.loghours.R$string: int menu_settings
+com.jamiewannenburg.loghours.R$string: int preference_file_key
+com.jamiewannenburg.loghours.R$string: int remove_employer_button
+com.jamiewannenburg.loghours.R$string: int start
+com.jamiewannenburg.loghours.R$string: int start_message
+com.jamiewannenburg.loghours.R$string: int stop
+com.jamiewannenburg.loghours.R$string: int stop_message
+com.jamiewannenburg.loghours.R$string: int title_activity_add_employer
+com.jamiewannenburg.loghours.R$string: int title_activity_drive
+com.jamiewannenburg.loghours.R$string: int title_activity_stop_logger
+com.jamiewannenburg.loghours.R$style: int AppBaseTheme
+com.jamiewannenburg.loghours.R$style: int AppTheme
+com.jamiewannenburg.loghours.StopLoggerActivity
+com.jamiewannenburg.loghours.StopLoggerActivity: StopLoggerActivity()
+com.jamiewannenburg.loghours.StopLoggerActivity: void stopHourLogger(android.view.View)
 javax.annotation.meta.When: javax.annotation.meta.When[] values()
 javax.annotation.meta.When: javax.annotation.meta.When valueOf(java.lang.String)
 org.codehaus.jackson.JsonEncoding: org.codehaus.jackson.JsonEncoding[] values()

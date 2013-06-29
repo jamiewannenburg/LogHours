@@ -1,11 +1,10 @@
-package com.example.loghours;
+package com.jamiewannenburg.loghours;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.loghours.EmployersContract.Employers;
-import com.example.loghours.LogsContract.Logs;
-import com.jamiewannenburg.loghours.R;
+import com.jamiewannenburg.loghours.EmployersContract.Employers;
+import com.jamiewannenburg.loghours.LogsContract.Logs;
 
 import android.content.ContentValues;
 import android.content.Context;

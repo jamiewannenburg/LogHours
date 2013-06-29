@@ -1,4 +1,4 @@
-package com.example.loghours;
+package com.jamiewannenburg.loghours;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
